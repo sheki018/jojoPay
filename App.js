@@ -1,21 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
+
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import KYCScreen from './app/screens/KYCScreen';
+import SelfieScreen from './app/screens/SelfieScreen';
+import VerifyScreen from './app/screens/VerifyScreen';
+import DocumentScreen from './app/screens/DocumentScreen';
+import SuccessScreen from './app/screens/SuccessScreen';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <KYCScreen />
+    //<SelfieScreen/>
+    //<VerifyScreen/>
+    //<DocumentScreen/>
+    //<SuccessScreen/>
   );
+
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
